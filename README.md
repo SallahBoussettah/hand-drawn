@@ -1,119 +1,156 @@
 # Hand-Drawn Portfolio Website
 
-A creative portfolio website with a hand-drawn aesthetic, featuring animated SVG elements, interactive paper-like textures, and a sketchbook metaphor throughout the interface.
+A creative portfolio website with a hand-drawn aesthetic, built with Next.js and Tailwind CSS. Features animated SVG elements, interactive paper-like textures, and a unique sketchbook-inspired interface.
 
-## Features
+[![Netlify Status](https://api.netlify.com/api/v1/badges/your-netlify-site-id/deploy-status)](https://app.netlify.com/sites/your-site-name/deploys)
 
-- Hand-drawn UI elements with animated drawing effects
-- Realistic paper textures with lighting and shadows
-- Interactive SVG animations that simulate real-time drawing
-- Responsive design that maintains the hand-drawn aesthetic across devices
-- Dark/light mode support
-- Smooth page transitions and animations
-- Portfolio project showcase
-- About page with timeline and skills visualization
-- Contact form with animated paper airplane submission effect
+## ✨ Features
 
-## Tech Stack
+- 🎨 Hand-drawn UI elements with animated drawing effects
+- 📄 Paper-like textures with realistic lighting and shadows
+- ✏️ Interactive SVG animations that simulate real-time drawing
+- 📱 Fully responsive design that maintains the hand-drawn aesthetic
+- 🚀 Optimized performance with Next.js
+- 🎭 Interactive face animation that follows cursor movement
+- 📝 Blog section with hand-drawn elements
+- 🗺️ Custom illustrated map component
+- 📬 Contact form with paper airplane animation
 
-- **Framework**: Next.js with TypeScript
-- **Styling**: Tailwind CSS 3.4.1
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 14](https://nextjs.org/) with TypeScript
+- **Styling**: [Tailwind CSS 3.4.1](https://tailwindcss.com/)
 - **Animations**: 
-  - Framer Motion for UI animations
-  - GSAP for advanced timeline-based animations
-  - RoughJS for hand-drawn rendering effects
-- **Hand-drawn Effects**:
-  - SVG path animations
-  - Custom paper texture components
-  - Sketch-like UI elements
+  - [Framer Motion](https://www.framer.com/motion/) for UI animations
+  - Custom SVG animations for drawing effects
+- **Fonts**:
+  - Custom handwritten font (located in `public/fonts/Myfont.ttf`)
+  - Inter (from Google Fonts) for body text
 
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
 - Node.js 18.17 or later
 - npm or yarn
+- Git
 
 ### Installation
 
 1. Clone the repository:
-
-```bash
-git clone https://github.com/yourusername/hand-drawn-portfolio.git
-cd hand-drawn-portfolio
-```
+   ```bash
+   git clone https://github.com/yourusername/hand-drawn-portfolio.git
+   cd hand-drawn-portfolio
+   ```
 
 2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-```bash
-npm install
-# or
-yarn install
-```
+3. Create a `.env.local` file in the root directory:
+   ```env
+   # Add any environment variables here
+   ```
 
-3. Run the development server:
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
-
-## Project Structure
+## 📁 Project Structure
 
 ```
 hand-drawn-portfolio/
 ├── public/            # Static assets
+│   └── images/        # Image assets
 ├── src/
-│   ├── app/           # Next.js 14 App Router
-│   ├── components/    # Reusable components
-│   │   ├── layout/    # Layout components
-│   │   └── ui/        # UI components
-│   └── styles/        # Global styles
+│   ├── app/          # Next.js 14 App Router pages
+│   ├── components/   # React components
+│   │   ├── layout/   # Layout components
+│   │   └── ui/       # Reusable UI components
+│   └── styles/       # Global styles
 ├── tailwind.config.js # Tailwind configuration
-└── next.config.js     # Next.js configuration
+└── next.config.js    # Next.js configuration
 ```
 
-## Hand-Drawn UI Components
+## 🎨 Custom Components
 
-The project includes several custom components for creating the hand-drawn effect:
+### Hand-Drawn UI Components
+- `HandDrawnPath`: Animated SVG paths with drawing effects
+- `PaperTexture`: Paper-like backgrounds with various textures
+- `HandDrawnButton`: Stylized buttons with hover animations
+- `HandDrawnMap`: Custom illustrated map component
 
-- `HandDrawnPath`: For animated SVG paths that draw themselves
-- `PaperTexture`: For paper-like backgrounds with different textures and effects
-- `HandDrawnButton`: For stylized buttons with hover and active states
+### Layout Components
+- `Navigation`: Responsive navigation with hand-drawn effects
+- `Footer`: Site footer with social links
+- `Layout`: Main layout wrapper with animations
 
-## Customization
+## 🌈 Customization
 
-### Changing Colors and Themes
+### Colors
+Color schemes are defined in `tailwind.config.js`:
+```javascript
+colors: {
+  paper: {
+    light: '#f9f7f1',
+    DEFAULT: '#f5f3e7',
+    dark: '#e8e6d9',
+  },
+  ink: {
+    light: '#555555',
+    DEFAULT: '#333333',
+    dark: '#111111',
+  }
+}
+```
 
-Color schemes are defined in the Tailwind configuration file. The main colors are:
+### Fonts
+The project uses:
+- Custom handwritten font (located in `public/fonts/Myfont.ttf`)
+- Inter (from Google Fonts) for body text
 
-- Paper colors: For background textures
-- Ink colors: For text and drawn elements
-- Pencil colors: For lighter drawn elements
+To use a different custom font:
+1. Place your font file in the `public/fonts` directory
+2. Update the font import in `src/app/layout.tsx`
 
-### Adding Custom Fonts
+## 🚀 Deployment
 
-The project uses Google Fonts for the handwritten aesthetic. To change or add fonts:
+### Deploying to Netlify
 
-1. Import new fonts in `src/app/layout.tsx`
-2. Update the font variables
-3. Update the Tailwind configuration in `tailwind.config.js`
+1. Connect your GitHub repository to Netlify
+2. Use the following build settings:
+   - Build command: `npx next build --no-lint`
+   - Publish directory: `.next`
+3. Add any required environment variables in Netlify's dashboard
 
-## Deployment
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/yourusername/hand-drawn-portfolio)
 
-This project is ready to be deployed on Vercel:
+## 🤝 Contributing
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fyourusername%2Fhand-drawn-portfolio)
+1. Fork the repository
+2. Create a new branch: `git checkout -b feature/your-feature`
+3. Make your changes
+4. Commit your changes: `git commit -m 'Add some feature'`
+5. Push to the branch: `git push origin feature/your-feature`
+6. Submit a pull request
 
-## License
+## 📝 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgements
+## 🙏 Acknowledgements
 
-- Font families from Google Fonts
-- Inspiration from traditional sketchbooks and paper textures
-- Hand-drawn SVG animations inspired by creative portfolios
+- Google Fonts for the beautiful typefaces
+- Netlify for hosting
+- Next.js team for the amazing framework
+- The open-source community for inspiration
+
+## 📧 Contact
+
+Your Name - [@yourusername](https://twitter.com/yourusername)
+
+Project Link: [https://github.com/yourusername/hand-drawn-portfolio](https://github.com/yourusername/hand-drawn-portfolio)

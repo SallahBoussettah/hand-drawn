@@ -197,7 +197,7 @@ export default function About() {
                     >
                       <div className="border-t border-dashed border-ink-light pt-3 mt-2">
                         <p className="text-sm italic">Hand-drawn with code</p>
-                        <p className="text-xs mt-1 mb-2">— Replace with your own portrait —</p>
+                        <p className="text-xs mt-1 mb-2">— Your future is being written in every line of code —</p>
                       </div>
                     </motion.div>
                   </div>
