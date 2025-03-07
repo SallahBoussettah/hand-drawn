@@ -5,6 +5,7 @@ const nextConfig = {
   images: {
     domains: ['localhost'],
   },
+  output: 'standalone',
   // Disable SSL validation for local development
   // This helps with the SSL issues mentioned in the requirements
   webpack: (config, { dev }) => {

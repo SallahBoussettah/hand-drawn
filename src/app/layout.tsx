@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import localFont from 'next/font/local';
+import { Inter, Caveat, Indie_Flower } from "next/font/google";
 import "./globals.css";
 
 // Inter for body text
@@ -10,28 +9,19 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
-// Custom handwritten font
-const customHand = localFont({
-  src: '../fonts/MyFont.ttf', // You'll need to add your font file here
-  variable: '--font-custom-hand',
-  display: 'swap',
+// Handwritten fonts
+const caveat = Caveat({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-caveat",
 });
 
-// Handwritten fonts (original)
-/* 
 const indieFlower = Indie_Flower({
   weight: "400",
   subsets: ["latin"],
   display: "swap",
   variable: "--font-indie-flower",
 });
-
-const caveat = Caveat({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-caveat",
-});
-*/
 
 export const metadata: Metadata = {
   title: "Hand-Drawn Portfolio",
@@ -45,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${customHand.variable} light`}>
+    <html lang="en" className={`${inter.variable} ${caveat.variable} ${indieFlower.variable} light`}>
       <body className="antialiased bg-paper-light min-h-screen text-ink">
         {children}
       </body>
