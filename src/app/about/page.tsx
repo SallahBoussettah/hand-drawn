@@ -348,7 +348,7 @@ export default function About() {
                 transition={{ delay: 0.4, duration: 0.6 }}
                 className="flex flex-wrap justify-center gap-4"
               >
-                <HandDrawnButton href="/contact" size="lg" variant="primary" className="text-paper-light">
+                <HandDrawnButton href="/contact" size="lg" variant="accent" className="text-paper-light">
                   Get In Touch
                 </HandDrawnButton>
                 <HandDrawnButton href="/portfolio" variant="outline" size="lg">
