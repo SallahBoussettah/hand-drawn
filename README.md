@@ -1,36 +1,119 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hand-Drawn Portfolio Website
+
+A creative portfolio website with a hand-drawn aesthetic, featuring animated SVG elements, interactive paper-like textures, and a sketchbook metaphor throughout the interface.
+
+## Features
+
+- Hand-drawn UI elements with animated drawing effects
+- Realistic paper textures with lighting and shadows
+- Interactive SVG animations that simulate real-time drawing
+- Responsive design that maintains the hand-drawn aesthetic across devices
+- Dark/light mode support
+- Smooth page transitions and animations
+- Portfolio project showcase
+- About page with timeline and skills visualization
+- Contact form with animated paper airplane submission effect
+
+## Tech Stack
+
+- **Framework**: Next.js with TypeScript
+- **Styling**: Tailwind CSS 3.4.1
+- **Animations**: 
+  - Framer Motion for UI animations
+  - GSAP for advanced timeline-based animations
+  - RoughJS for hand-drawn rendering effects
+- **Hand-drawn Effects**:
+  - SVG path animations
+  - Custom paper texture components
+  - Sketch-like UI elements
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18.17 or later
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/hand-drawn-portfolio.git
+cd hand-drawn-portfolio
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+hand-drawn-portfolio/
+├── public/            # Static assets
+├── src/
+│   ├── app/           # Next.js 14 App Router
+│   ├── components/    # Reusable components
+│   │   ├── layout/    # Layout components
+│   │   └── ui/        # UI components
+│   └── styles/        # Global styles
+├── tailwind.config.js # Tailwind configuration
+└── next.config.js     # Next.js configuration
+```
 
-## Learn More
+## Hand-Drawn UI Components
 
-To learn more about Next.js, take a look at the following resources:
+The project includes several custom components for creating the hand-drawn effect:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `HandDrawnPath`: For animated SVG paths that draw themselves
+- `PaperTexture`: For paper-like backgrounds with different textures and effects
+- `HandDrawnButton`: For stylized buttons with hover and active states
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Customization
 
-## Deploy on Vercel
+### Changing Colors and Themes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Color schemes are defined in the Tailwind configuration file. The main colors are:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Paper colors: For background textures
+- Ink colors: For text and drawn elements
+- Pencil colors: For lighter drawn elements
+
+### Adding Custom Fonts
+
+The project uses Google Fonts for the handwritten aesthetic. To change or add fonts:
+
+1. Import new fonts in `src/app/layout.tsx`
+2. Update the font variables
+3. Update the Tailwind configuration in `tailwind.config.js`
+
+## Deployment
+
+This project is ready to be deployed on Vercel:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fyourusername%2Fhand-drawn-portfolio)
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgements
+
+- Font families from Google Fonts
+- Inspiration from traditional sketchbooks and paper textures
+- Hand-drawn SVG animations inspired by creative portfolios
