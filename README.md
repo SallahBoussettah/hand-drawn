@@ -39,8 +39,7 @@ A creative portfolio website with a hand-drawn aesthetic, built with Next.js and
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/hand-drawn-portfolio.git
-   cd hand-drawn-portfolio
+   git clone https://github.com/yourusername/hand-drawn.git
    ```
 
 2. Install dependencies:
@@ -151,6 +150,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-Your Name - [@yourusername](https://twitter.com/yourusername)
+Your Name - [@Salah](https://twitter.com/salahboussettah)
 
-Project Link: [https://github.com/yourusername/hand-drawn-portfolio](https://github.com/yourusername/hand-drawn-portfolio)
+Project Link: [https://github.com/yourusername/hand-drawn-portfolio](https://github.com/sallahboussettah/hand-drawn)
