@@ -39,7 +39,7 @@ A creative portfolio website with a hand-drawn aesthetic, built with Next.js and
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/hand-drawn.git
+   git clone https://github.com/SallahBoussettah/Hand-Drawn
    ```
 
 2. Install dependencies:
