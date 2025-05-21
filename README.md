@@ -150,6 +150,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-Your Name - [@Salah](https://twitter.com/salahboussettah)
+Name - [@Salah](https://twitter.com/salahboussettah)
 
 Project Link: [https://github.com/SallahBoussettah/Hand-Drawn](https://github.com/sallahboussettah/hand-drawn)
